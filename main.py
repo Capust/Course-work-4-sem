@@ -50,3 +50,8 @@ for model_name, model in models.items():
 best_model_name = min(results, key=lambda x: results[x]['MSE'])
 print(f'Best model: {best_model_name} with MSE of {results[best_model_name]["MSE"]} and R2 of {results[best_model_name]["R2"]}')
 
+
+pass
+pass
+...
+
