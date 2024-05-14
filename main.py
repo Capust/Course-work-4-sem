@@ -7,7 +7,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import mean_squared_error, r2_score
 
-
 # Загрузить данные
 data = pd.read_csv('heart.csv')
 
@@ -48,10 +47,5 @@ for model_name, model in models.items():
 # Отобразить подробный отчет о классификации для лучшей модели
 # Выбор лучшей модели
 best_model_name = min(results, key=lambda x: results[x]['MSE'])
-print(f'Best model: {best_model_name} with MSE of {results[best_model_name]["MSE"]} and R2 of {results[best_model_name]["R2"]}')
-
-
-pass
-pass
-...
-
+print(
+    f'Best model: {best_model_name} with MSE of {results[best_model_name]["MSE"]} and R2 of {results[best_model_name]["R2"]}')
